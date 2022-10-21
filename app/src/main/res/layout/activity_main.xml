@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDADA"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/dd_logo" />
+
+    <TextView
+        android:id="@+id/food_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:text="Hamburger"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_food"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="188dp"
+        android:hint="add new food..."
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/add_food"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/decide_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="116dp"
+        android:text="ADD FOOD"
+        app:cornerRadius="2dp" />
+
+    <Button
+        android:id="@+id/decide_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:text="DECIDE!"
+        app:cornerRadius="0dp" />
+
+
+</RelativeLayout>
